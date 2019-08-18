@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<APP>
+  <VALIDATION>
+      <REQUIRED>Maximum :field Length Should be :satisfier length</REQUIRED>
+      <MAXLENGTH>Maximum :field Length Should be :satisfier length</MAXLENGTH>
+      <MINLENGHT>Minlength :field Length Should be :satisfier length</MINLENGHT>
+      <EMAIL>Email :satisfier is invalid</EMAIL>
+      <ALPHANUM>Field :field must be Alphanumeric.</ALPHANUM>
+      <MATCH>Field :field does not match with the :satisfier.</MATCH>
+      <CHECKED>Field :field must be checked.</CHECKED>
+      <UNIQUE>Field :field must be unique, :satisfier is not a uniqued value.</UNIQUE>
+  </VALIDATION>
+</APP>

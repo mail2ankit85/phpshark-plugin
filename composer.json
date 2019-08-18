@@ -1,0 +1,22 @@
+{
+    "name": "ankit.kumar/phpshark-plugin",
+    "description": "PHPshark Plugin is an MVC Development of Word Press Plugin",
+    "type": "project",
+    "license": "Commercial Lisence",
+    "authors": [
+        {
+            "name": "Ankit Kumar",
+            "email": "mail2ankit85@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+  	"autoload": {
+          "psr-4": {
+        			"Core\\": "./app",
+        			"Src\\": "./src",
+      				"Perform\\": "./app/lib/bin/performs",
+      				"WP\\": "./app/wordpress"
+      		}
+      }
+}

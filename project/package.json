@@ -1,0 +1,34 @@
+{
+  "name": "phpshark",
+  "version": "1.0.0",
+  "description": "PHP Shark is a commercial Website Plugin by CRS Solutions Pvt. Ltd.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "quill": "^1.3.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-coffee": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^4.11.0",
+    "yarn": "^1.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "yarn": "yarn",
+    "gulp": "gulp",
+    "minify": "gulp minify",
+    "serve": "gulp serve"
+  },
+  "author": "Ankit Kumar <mail2ankit85@gmail.com>",
+  "license": "ISC"
+}

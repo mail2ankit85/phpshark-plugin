@@ -63,9 +63,9 @@ namespace Core\Lib {
 
 			//set the url, number of POST vars, POST data
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt($ch, CURLOPT_USERPWD, 'AC8366ea2bcb01b70ece3ba4eef720a396' . ':' . '528beb0547af39f0d784738dd971eaf4');
+			curl_setopt($ch, CURLOPT_USERPWD, 'API_KEY' . ':' . '528beb0547af39f0d784738dd971eaf4');
 			curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
-			curl_setopt($ch, CURLOPT_URL, sprintf('https://api.twilio.com/2010-04-01/Accounts/%s/Messages.json', 'AC8366ea2bcb01b70ece3ba4eef720a396'));
+			curl_setopt($ch, CURLOPT_URL, sprintf('https://api.twilio.com/2010-04-01/Accounts/%s/Messages.json', 'API_KEY'));
 			curl_setopt($ch, CURLOPT_POST, 3);
 			curl_setopt($ch, CURLOPT_POSTFIELDS, 'To=' . $to . '&From=' . $from . '&Body=' . $text);
 

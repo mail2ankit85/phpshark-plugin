@@ -11,7 +11,7 @@ if (file_exists(PLUGIN_DIR . 'app' . DS . 'admin-page-framework' . DS . 'admin-p
 
 /**
  * ********************************************
- * SAMPLE CODE BLOCK 
+ * SAMPLE CODE BLOCK
  * EXAMPLE
  * *********************************************
  */
@@ -72,128 +72,5 @@ class PHPSharkCreatePage extends \PHPShark_AdminPageFramework {
 		?>
 				<h4> Set your Environmental variables here!! </h4>
 		<?php
-	}
-
-	public function load_resume() {
-			$this->addSettingSections(
-				array(
-					'section_id'        => 'resume',
-					'title'             => 'Resume Page Settings',
-				)
-			);
-			$this->addSettingFields(
-				'resume',   // target section ID
-				array(
-					'field_id'  => 'bio_field_name',
-					'title'     => 'Biography',
-					'type'      => 'text',
-					'default'   => 'About',
-				),
-				array(
-					'field_id'  => 'exp_field_name',
-					'title'     => 'Experiance',
-					'type'      => 'text',
-					'default'   => 'Experiance',
-				),
-				array(
-					'field_id'  => 'edu_field_name',
-					'title'     => 'Education',
-					'type'      => 'text',
-					'default'   => 'Education',
-				),
-				array(
-					'field_id'  => 'skl_field_name',
-					'title'     => 'Skill',
-					'type'      => 'text',
-					'default'   => 'Skill',
-				),
-				array(
-					'field_id'  => 'prg_field_name',
-					'title'     => 'Programming Languages &amp; Tools',
-					'type'      => 'text',
-					'default'   => 'Programming Languages &amp; Tools',
-				),
-				array(
-					'field_id'  => 'erp_field_name',
-					'title'     => 'SAP/ERP Competencies',
-					'type'      => 'text',
-					'default'   => 'SAP/ERP Competencies',
-				),
-				array(
-					'field_id'  => 'prj_field_name',
-					'title'     => 'Project',
-					'type'      => 'text',
-					'default'   => 'Project',
-				),
-				array(
-					'field_id'  => 'int_field_name',
-					'title'     => 'Interest',
-					'type'      => 'text',
-					'default'   => 'Interest',
-				),
-				array(
-					'field_id'  => 'awd_field_name',
-					'title'     => 'Awards',
-					'type'      => 'text',
-					'default'   => 'Awards &amp; Certifications',
-				),
-				array(
-					'field_id'  => '_submit',
-					'type'      => 'submit',
-					'save'      => false,
-				)
-			);
-	}
-
-	public function load_contact() {
-		$this->addSettingSections(
-			array(
-				'section_id'        => 'contact',
-				'title'             => 'Contact Settings',
-			)
-		);
-		$this->addSettingFields(
-			'contact',   // target section ID
-			array(
-				'field_id'  => 'company_name',
-				'title'     => 'Company',
-				'type'      => 'text',
-				'attributes'    => array( 'size' => 60 ),
-			),
-			array(
-				'field_id'  => 'phone',
-				'title'     => 'Phone',
-				'type'      => 'text',
-			),
-			array(
-				'field_id'  => 'longitude',
-				'title'     => 'Longitude',
-				'type'      => 'text',
-			),
-			array(
-				'field_id'  => 'latitude',
-				'title'     => 'Latitude',
-				'type'      => 'text',
-			),
-			array(
-				'field_id'  => 'longitude',
-				'title'     => 'Longitude',
-				'type'      => 'text',
-			),
-			array(
-				'field_id'  => 'address',
-				'title'     => 'Registered Address',
-				'type'      => 'textarea',
-								'rich' => array(
-								'media_buttons' => false,
-								'tinymce'       => false
-							),
-			),
-			array(
-				'field_id'  => '_submit',
-				'type'      => 'submit',
-				'save'      => false,
-			)
-		);
 	}
 }

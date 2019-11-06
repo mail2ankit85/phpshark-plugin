@@ -35,7 +35,7 @@ class PHPSharkCustomTaxonomy{
 
 
   private function createCustomTaxonomyCatagory(){
-    $this->_internalName = str_replace(' ','-',strtolower($this->_name));
+    $this->_internalName = str_replace(' ','_',strtolower($this->_name));
     $create_taxonomy = "{$this->_project}_create_taxonomy_{$this->_internalName}";
     $functionCallback = $create_taxonomy;
     $$functionCallback = function() {

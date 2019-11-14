@@ -40,12 +40,10 @@ class Script{
 		// wp_register_script('phpsharkRequire', BEP_ASSETS_URI. 'phpshark/phpshark-require.js', array(), '1.0.0', true); // Custom scripts
 		// wp_enqueue_script('phpsharkRequire');
 
-		wp_register_script('foundationScript', BEP_ASSETS_URI. 'vendor/foundation/js/vendor/foundation.min.js', array(), '1.0.0', true); // Custom scripts
-		wp_enqueue_script('foundationScript');
-		
-		wp_register_script('whatinputScript', BEP_ASSETS_URI. 'vendor/foundation/js/vendor/what-input.js', array(), '1.0.0', true); // Custom scripts
-		wp_enqueue_script('whatinputScript');
+		wp_enqueue_script('foundationScript', BEP_ASSETS_URI. 'vendor/foundation/js/vendor/foundation.min.js', array(), '1.0.0', true); // Custom scripts
 
+		wp_enqueue_script('whatinputScript', BEP_ASSETS_URI. 'vendor/foundation/js/vendor/what-input.js', array(), '1.0.0', true); // Custom scripts
+		
 		if (is_page('pagenamehere')) {}
 	}
 }

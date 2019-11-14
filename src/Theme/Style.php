@@ -24,9 +24,8 @@ class Style{
 			// wp_register_style('normalize', BEP_ASSETS_URI . 'vendors/normalize/normalize.min.css', array(), '1.0', 'all');
 			// wp_enqueue_style('normalize'); // Enqueue it!
 			wp_enqueue_style( 'phpshark-fontawesome', 'https://kit.fontawesome.com/b1ac3fac09.js' );
+			wp_enqueue_style( 'phpshark-styles', BEP_ASSETS_URI . 'vendor/foundation/css/foundation.min.css' );
 			wp_enqueue_style( 'phpshark-styles', BEP_ASSETS_URI . 'css/styles.css' );
 		}
 	}
 }
-
-

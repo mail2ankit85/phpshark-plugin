@@ -9,6 +9,9 @@ if (file_exists(PLUGIN_DIR . 'app' . DS . 'admin-page-framework' . DS . 'admin-p
 	echo '\"Admin Framework Integration\" Not Found!';
 }
 
+//========================================================================================
+//EXAMPLES
+//========================================================================================
 /**
  * ********************************************
  * SAMPLE CODE BLOCK
@@ -43,7 +46,9 @@ if (file_exists(PLUGIN_DIR . 'app' . DS . 'admin-page-framework' . DS . 'admin-p
 		// );
 
 	// }
-
+	//========================================================================================
+	//EXAMPLES
+	//========================================================================================
 class PHPSharkCreatePage extends \PHPShark_AdminPageFramework {
 	public function __construct(){
 		parent::__construct();

@@ -17,9 +17,9 @@
  * @wordpress-plugin
  * Plugin Name:       PHPShark-Plugin
  * Plugin URI:        www.contemplativeradicals.com
- 
+
  * Description:       An MVC-Plugin Created By Contemplative Radical Solutions. This is a commercial plugin created for customer solultions.
- 
+
  * Version:           1.0.0
  * Author:            Ankit Kumar
  * Author URI:        www.contemplativeradicals.com
@@ -79,6 +79,12 @@ require "app/includes/app_autoloads.php";
  */
 require "app/includes/inc_special.php";
 
+//ADMIN FRAMEWORK INTEGRATION
+if (file_exists(PLUGIN_DIR . 'app' . DS . 'admin-page-framework' . DS . 'admin-page-framework.php')){
+	require_once PLUGIN_DIR . 'app' . DS . 'admin-page-framework' . DS . 'admin-page-framework.php';
+}else{
+	echo '\"Admin Framework Integration\" Not Found!';
+}
 
 /**
  * Currently plugin version.
@@ -121,7 +127,7 @@ register_deactivation_hook( __FILE__, 'deactivate_phpshark_plugin' );
  * @since    1.0.0
  */
 function run_phpshark_plugin() {
-	
+
 	$plugin = new \Core\App();
 	$plugin->run();
 	$plugin->registerServices();

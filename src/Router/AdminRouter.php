@@ -9,7 +9,7 @@ class AdminRouter{
 			//========================================================================================
 			// \Src\Plugin\AdminStyle::class,
 			// \Src\Plugin\AdminScript::class,
-			// \Src\Plugin\PHPSharkCreatePage::class,
+			\Src\Plugin\PHPSharkCreatePage::class,
 			// \Src\Plugin\CustomTypes::class,
 			// \Src\Plugin\Taxonomy::class,
 			// \Src\Plugin\Tag::class,

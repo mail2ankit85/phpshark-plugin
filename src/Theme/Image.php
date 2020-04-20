@@ -4,21 +4,38 @@ namespace Src\Theme;
 
 class Image{
 	public function register(){
+
+		//========================================================================================
+		//EXAMPLES
+		//========================================================================================
 		// Add Thumbnail Theme Support
-		add_theme_support('post-thumbnails');
-		add_image_size('large', 700, '', true); // Large Thumbnail
-		add_image_size('medium', 250, '', true); // Medium Thumbnail
-		add_image_size('small', 120, '', true); // Small Thumbnail
-		add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+		// add_image_size('large', 700, '', true); // Large Thumbnail
+		// add_image_size('medium', 250, '', true); // Medium Thumbnail
+		// add_image_size('small', 120, '', true); // Small Thumbnail
+		// add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+		//========================================================================================
+		//EXAMPLES
+		//========================================================================================
+		//========================================================================================
+		//DEVELOPERS CODE
+		//========================================================================================
 
-		// Remove width and height dynamic attributes to thumbnails
-		add_filter('post_thumbnail_html',[ $this, 'remove_thumbnail_dimensions' ] , 10);
 
-		// Remove width and height dynamic attributes to post images
-		add_filter('image_send_to_editor', [ $this, 'remove_thumbnail_dimensions' ], 10);
 
-		// Custom Gravatar in Settings > Discussion
-		add_filter('avatar_defaults', [$this, 'gravatar']);
+
+
+		//========================================================================================
+		//DEVELOPERS CODE
+		//========================================================================================
+
+			// Remove width and height dynamic attributes to thumbnails
+			add_filter('post_thumbnail_html',[ $this, 'remove_thumbnail_dimensions' ] , 10);
+
+			// Remove width and height dynamic attributes to post images
+			add_filter('image_send_to_editor', [ $this, 'remove_thumbnail_dimensions' ], 10);
+
+			// Custom Gravatar in Settings > Discussion
+			add_filter('avatar_defaults', [$this, 'gravatar']);
     }
 
 

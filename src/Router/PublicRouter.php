@@ -7,15 +7,15 @@ class PublicRouter{
 			//========================================================================================
 			//EXAMPLES
 			//========================================================================================
-				// \Src\Theme\Pages::class,
-				// \Src\Theme\Style::class,
-				// \Src\Theme\Script::class,
-				// \Src\Theme\Comment::class,
-				// \Src\Theme\PostView::class,
-				// \Src\Theme\Admin::class,
-				// \Src\Theme\Shortcode::class,
-				// \Src\Theme\Image::class,
-				// \Src\Theme\Media::class,
+				\Src\Theme\Pages::class,
+				\Src\Theme\Style::class,
+				\Src\Theme\Script::class,
+				\Src\Theme\Comment::class,
+				\Src\Theme\PostView::class,
+				\Src\Theme\Admin::class,
+				\Src\Theme\Shortcode::class,
+				\Src\Theme\Image::class,
+				\Src\Theme\Media::class,
 				//========================================================================================
 				//EXAMPLES
 				//========================================================================================

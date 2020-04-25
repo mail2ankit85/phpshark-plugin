@@ -4,8 +4,8 @@ namespace Src\Theme;
 
 class Pages{
   public function register(){
-    add_filter( 'page_template', [$this,'phpshark_page_templates'] );
-    add_filter( 'post_template', [$this,'phpshark_page_templates'] );
+    // add_filter( 'page_template', [$this,'phpshark_page_templates'] );
+    // add_filter( 'post_template', [$this,'phpshark_page_templates'] );
   }
 
   public function phpshark_page_templates(){

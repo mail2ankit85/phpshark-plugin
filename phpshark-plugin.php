@@ -80,8 +80,8 @@ require "app/includes/app_autoloads.php";
 require "app/includes/inc_special.php";
 
 //ADMIN FRAMEWORK INTEGRATION
-if (file_exists(PLUGIN_DIR . 'app' . DS . 'admin-page-framework' . DS . 'admin-page-framework.php')){
-	require_once PLUGIN_DIR . 'app' . DS . 'admin-page-framework' . DS . 'admin-page-framework.php';
+if (file_exists(PLUGIN_DIR . 'app' . DS . 'php-shark-admin-page-framework' . DS . 'admin-page-framework.php')){
+	require_once PLUGIN_DIR . 'app' . DS . 'php-shark-admin-page-framework' . DS . 'admin-page-framework.php';
 }else{
 	echo '\"Admin Framework Integration\" Not Found!';
 }

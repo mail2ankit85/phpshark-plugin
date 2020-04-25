@@ -4,11 +4,26 @@ namespace Src\Plugin;
 
 class AdminScript{
 	public function register(){
-		// Add Custom Scripts to wp_head
-		add_action('init', [ $this, 'phpshark_template_header_scripts' ]);
+			//========================================================================================
+			//CORE APPLICATION CODE
+			//========================================================================================
+			// Add Custom Scripts to wp_head
+			add_action('init', [ $this, 'phpshark_template_header_scripts' ]);
 
-		// Add Conditional Page Scripts
-		add_action('wp_print_scripts', [ $this, 'phpshark_template_scripts'] );
+			// Add Conditional Page Scripts
+			add_action('wp_print_scripts', [ $this, 'phpshark_template_scripts'] );
+			//========================================================================================
+			//CORE APPLICATION CODE
+			//========================================================================================
+			//========================================================================================
+			//DEVELOPERS CODE
+			//========================================================================================
+
+
+
+			//========================================================================================
+			//DEVELOPERS CODE
+			//========================================================================================
     }
 
 	// Load scripts (header.php)

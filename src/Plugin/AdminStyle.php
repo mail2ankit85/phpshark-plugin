@@ -24,6 +24,7 @@ class AdminStyle{
 		//========================================================================================
     }
 
+
 	// Remove 'text/css' from our enqueued stylesheet
 	public function style_remove($tag)
 	{

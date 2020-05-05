@@ -2,9 +2,9 @@
 namespace Src\Theme;
 
 class Widget{
-    public function register(){
-        add_action( 'widgets_init', [$this,'aixclusiv_widgets_init'] );
-    }
+        public function register(){
+            add_action( 'widgets_init', [$this,'aixclusiv_widgets_init'] );
+        }
     //========================================================================================
     //DEVELOPERS CODE
     //========================================================================================

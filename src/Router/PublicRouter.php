@@ -4,26 +4,15 @@ namespace Src\Router;
 class PublicRouter{
 	public static function getServices(){
 		return [
-			//========================================================================================
-			//EXAMPLES
-			//========================================================================================
-				\Src\Theme\Pages::class,
-				\Src\Theme\Style::class,
-				\Src\Theme\Script::class,
-				\Src\Theme\Comment::class,
-				\Src\Theme\PostView::class,
-				\Src\Theme\Admin::class,
-				\Src\Theme\Shortcode::class,
-				\Src\Theme\Image::class,
-				\Src\Theme\Media::class,
-				//========================================================================================
-				//EXAMPLES
-				//========================================================================================
 				//========================================================================================
 				//DEVELOPERS CODE
 				//========================================================================================
-				\Src\Theme\Admin::class
-
+					\Src\Theme\Scripts::class,
+					\Src\Theme\Shortcode::class,
+					\Src\Theme\Navigation::class,
+					\Src\Theme\Posts::class,
+					\Src\Theme\Pages::class,
+					\Src\Theme\Media::class,
 				//========================================================================================
 				//DEVELOPERS CODE
 				//========================================================================================

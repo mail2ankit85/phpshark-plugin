@@ -9,9 +9,7 @@ namespace Src\Theme;
 * Code is browser and JavaScript independent.
 * @Tested on: WordPress version 3.2.1
 ***********************************************************************************/
-
 class PostView{
-
 	//Gets the  number of Post Views to be used later.
 	public function get_PostViews($post_ID){
 		$count_key = 'post_views_count';

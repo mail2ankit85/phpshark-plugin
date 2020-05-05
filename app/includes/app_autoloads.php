@@ -25,26 +25,11 @@ function __loadlib($class) {
 	if (file_exists(PLUGIN_DIR . 'app' . DS . $class . '.php'))
 		require_once PLUGIN_DIR . 'app' . DS . $class . '.php';
 
-	if (file_exists(PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'database' . DS . $class . '.php'))
-		require_once PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'database' . DS . $class . '.php';
-
-	if (file_exists(PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'roles' . DS . $class . '.php'))
-		require_once PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'roles' . DS . $class . '.php';
-
 	if (file_exists(PLUGIN_DIR . 'app' . DS . 'lib' . DS . $class . '.php'))
 		require_once PLUGIN_DIR . 'app' . DS . 'lib' . DS . $class . '.php';
 
 	if (file_exists(PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'files' . DS . $class . '.php'))
 		require_once PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'files' . DS . $class . '.php';
-
-	if (file_exists(PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'database' . DS . 'mysql' . DS . $class . '.php'))
-		require_once PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'database' . DS . 'mysql' . DS . $class . '.php';
-
-	if (file_exists(PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'database' . DS . 'orm' . DS . $class . '.php'))
-		require_once PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'database' . DS . 'orm' . DS . $class . '.php';
-
-	if (file_exists(PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'database' . DS . 'crud' . DS . $class . '.php'))
-		require_once PLUGIN_DIR . 'app' . DS . 'lib' . DS . 'database' . DS . 'crud' . DS . $class . '.php';
 }
 
 
@@ -53,4 +38,3 @@ spl_autoload_register("__loadlib");
 
 //Load Vendor Autoload
 require (PLUGIN_DIR.'vendor'.DS.'autoload.php');
-

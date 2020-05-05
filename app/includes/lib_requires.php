@@ -30,4 +30,3 @@ $wp_path = PLUGIN_DIR . 'project' . DS . 'wp_functions';
 foreach (glob("{$wp_path}/*.php") as $wp_filename){
     require_once $wp_filename;
 }
-

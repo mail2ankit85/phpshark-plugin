@@ -30,3 +30,20 @@ $wp_path = PLUGIN_DIR . 'project' . DS . 'wp_functions';
 foreach (glob("{$wp_path}/*.php") as $wp_filename){
     require_once $wp_filename;
 }
+
+/***************************************************************/
+/* include Wordpress classes -inc
+/***************************************************************/
+$wp_path = PLUGIN_DIR . 'project' . DS . 'wp_functions' .DS. 'inc';
+foreach (glob("{$wp_path}/*.php") as $wp_filename){
+    require_once $wp_filename;
+}
+
+
+/***************************************************************/
+/* include Wordpress classes -classes
+/***************************************************************/
+$wp_path = PLUGIN_DIR . 'project' . DS . 'wp_functions' .DS. 'classes';
+foreach (glob("{$wp_path}/*.php") as $wp_filename){
+    require_once $wp_filename;
+}

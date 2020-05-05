@@ -13,6 +13,7 @@ class PublicRouter{
 					\Src\Theme\Posts::class,
 					\Src\Theme\Pages::class,
 					\Src\Theme\Media::class,
+					\Src\Theme\Widget::class
 				//========================================================================================
 				//DEVELOPERS CODE
 				//========================================================================================

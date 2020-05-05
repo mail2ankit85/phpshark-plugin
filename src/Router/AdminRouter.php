@@ -13,7 +13,6 @@ class AdminRouter{
 					\Src\Plugin\CustomTypes::class,
 					\Src\Plugin\Taxonomy::class,
 					\Src\Plugin\Slug::class,
-					\Src\Plugin\Widget::class
 			//========================================================================================
 			//DEVELOPERS CODE
 			//========================================================================================

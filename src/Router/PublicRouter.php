@@ -14,7 +14,8 @@ class PublicRouter{
 					\Src\Theme\Pages::class,
 					\Src\Theme\Media::class,
 					\Src\Theme\Widget::class,
-					\Src\Theme\Support::class
+					\Src\Theme\Support::class,
+					\Src\Theme\PostView::class,
 				//========================================================================================
 				//DEVELOPERS CODE
 				//========================================================================================

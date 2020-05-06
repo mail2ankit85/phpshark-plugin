@@ -10,7 +10,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "valendesigns/option-tree": "dev-master",
+        "symphony/symphony": "dev-master"
+    },
   	"autoload": {
           "psr-4": {
         			"Core\\": "./app",

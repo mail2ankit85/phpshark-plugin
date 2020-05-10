@@ -13,6 +13,7 @@ if ( ! defined( 'WPINC' ) ) {
 	//Project Name:
 	$project = $config->PROJECT;
 	$base    = $config->BASE;
+	$text_domain    = $config->TEXT_DOMAIN;
 
 	//Set Your Environment
 	$environment     = $config->ENVIRONMENT;

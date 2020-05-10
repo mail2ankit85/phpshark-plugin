@@ -1,10 +1,10 @@
-<?php 
+<?php
 /**
  * @package  PHPShark-Plugin
  */
 namespace  Core\Lib\Files {
-	if (!defined('BASEPATH')) exit('No direct script access allowed');
-	
+	if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
+
 	use \PDO;
 
 
@@ -12,7 +12,7 @@ namespace  Core\Lib\Files {
 	{
 
 		public function __construct(){}
-		
+
 		public function fileContent($path)
 		{
 			return file_get_contents($path);
@@ -61,7 +61,7 @@ namespace  Core\Lib\Files {
 					return false;
 				}
 			}else{
-				return false;	
+				return false;
 			}
 		}
 
@@ -112,10 +112,10 @@ namespace  Core\Lib\Files {
 			}
 			$directory = $check_path . DIRECTORY_SEPARATOR;
 			endforeach;
-			
+
 			if(isset($arg[4])) $noAppendFlag = $arg[4];
 			if(isset($arg[3])) $dateflag = $arg[3];
-			
+
 			if ($noAppendFlag == true) {
 				if ($dateflag == true) {
 					$date = 'date:';

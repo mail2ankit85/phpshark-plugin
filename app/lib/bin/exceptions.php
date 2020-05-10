@@ -1,5 +1,5 @@
 <?php
-if (!defined('BASEPATH')) exit('No direct script access allowed');
+if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
 
 /*
 <!--
@@ -8,7 +8,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 <APP_ERROR_LOG>'logs'.DS.'application'.DS.'core-error-log.txt'</APP_ERROR_LOG>
 <PHP_LOG>'logs'.DS.'php'.DS.'php-log.txt'</PHP_LOG>
  ***************************************************************/
- 
+
 if(!function_exists('phpshark_writeDBLog')):
 function phpshark_writeDBLog($e, $query = null)
 {

@@ -7,7 +7,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  * @param Array $arr Mandatory
  *
  */
- 
+
 if(!function_exists('phpshark_arrayClean')):
 function phpshark_arrayClean(array $arr)
 {
@@ -17,7 +17,7 @@ function phpshark_arrayClean(array $arr)
 			return $arr;
 	}
 	else {
-		setError( "Array Object in function '". __FUNCTION__ ."()' cannot be empty!" );
+		setError( __("Array Object in function ",TEXT_DOMAIN). __FUNCTION__ ."()". __('cannot be empty!',TEXT_DOMAIN) );
 	}
 }
 endif;
@@ -88,7 +88,7 @@ function phpshark_arrayFind(array $array, string $where, string $value)
 		return null;
 	}
 }
-endif; 
+endif;
 
 if(!function_exists('phpshark_arrayIntersect')):
 function phpshark_arrayIntersect(array $array1, array $array2)
@@ -104,7 +104,7 @@ function phpshark_arrrayDifference(array $array1, array $array2)
 	$r = array_diff($array1, $array2);
 	return $r;
 }
-endif; 
+endif;
 
 
 if(!function_exists('phpshark_arrayUnique')):
@@ -113,7 +113,7 @@ function phpshark_arrayUnique(array $array1, array $array2)
 	$r =& array_unique(array_merge($array1, $array2));
 	return $r;
 }
-endif; 
+endif;
 
 if(!function_exists('phpshark_arrayConcatanate')):
 function phpshark_arrayConcatanate(array $arr, string $using)
@@ -134,7 +134,7 @@ function phpshark_arrayReccursion(array $myArray, string $find) {
     }
     return $res;
 }
-endif; 
+endif;
 
 if(!function_exists('phpshark_arrayHas')):
 function phpshark_arrayHas(Array $array, String $index){

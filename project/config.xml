@@ -15,12 +15,15 @@ Refer to the Application document for user settings & Changes.
 		<!-- Project Description -->
 		<PROJECT>Fixopr</PROJECT>
 
+		<!-- Project Description -->
+		<TEXT_DOMAIN>phpshark</TEXT_DOMAIN>
+
 		<!-- Environment Settings -->
 		<ENVIRONMENT>development</ENVIRONMENT>
 		<ERROR_REPORTING>Automatic</ERROR_REPORTING>
 
 		<!-- Application Error Mode-->
-		<ERROR>ON</ERROR>
+		<ERROR>OFF</ERROR>
 
 		<!-- Database Connection-->
 		<PERSISTENT>false</PERSISTENT>

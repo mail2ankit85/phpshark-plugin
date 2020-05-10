@@ -79,6 +79,14 @@ require "app/includes/app_autoloads.php";
  */
 require "app/includes/inc_special.php";
 
+/**
+ * Include Special librarry classes for micro functions.
+ */
+require "app/includes/helper_functions.php";
+
+//TEXT DOMAIN
+Defined("TEXT_DOMAIN") || Define('TEXT_DOMAIN', phpshark_read_config('text-domain','name') );
+
 //ADMIN FRAMEWORK INTEGRATION
 if (file_exists(PLUGIN_DIR . 'app' . DS . 'php-shark-admin-page-framework' . DS . 'admin-page-framework.php')){
 	require_once PLUGIN_DIR . 'app' . DS . 'php-shark-admin-page-framework' . DS . 'admin-page-framework.php';

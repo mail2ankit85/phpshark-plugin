@@ -5,6 +5,7 @@ namespace Src\Theme;
 class Media{
 		public function register(){
 				add_action('pre_get_posts',[$this, 'users_own_attachments']);
+				add_filter('avatar_defaults', [$this, 'gravatar']);
     }
 
 		public function users_own_attachments( $wp_query_obj ) {
@@ -19,5 +20,12 @@ class Media{
 		    if( !current_user_can('delete_pages') )
 		        $wp_query_obj->set('author', $current_user->ID );
 		    return;
+		}
+
+		// Custom Gravatar in Settings > Discussion
+		public function gravatar ($avatar_defaults){
+			$myavatar = IMG_URI . 'gravatar.jpg';
+			$avatar_defaults[$myavatar] = "Custom Gravatar";
+			return $avatar_defaults;
 		}
 }

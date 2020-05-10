@@ -27,7 +27,7 @@ namespace Core\Lib\Perform{
         public static function getTweets($hash_tag){
 
             $url = 'http://search.twitter.com/search.atom?q='.urlencode($hash_tag) ;
-            echo "<p>Connecting to <strong>$url</strong> ...</p>";
+            echo '<p>'. __('Connecting to',TEXT_DOMAIN).'<strong>$url</strong> ...</p>';
             $ch = curl_init($url);
             curl_setopt ($ch, CURLOPT_RETURNTRANSFER, true);
             $xml = curl_exec ($ch);
@@ -44,7 +44,7 @@ namespace Core\Lib\Perform{
                 $author = trim($entry->author->name);
                 $time = strtotime($entry->published);
                 $id = $entry->id;
-                echo "<p>Tweet from ".$author.": <strong>".$text."</strong>  <em>Posted ".date('n/j/y g:i a', $time)."</em></p>";
+                echo "<p>". __('Tweet from',TEXT_DOMAIN) ." ".$author.": <strong>".$text."</strong>  <em>Posted ".date('n/j/y g:i a', $time)."</em></p>";
             }
             return true ;
         }

@@ -1,5 +1,5 @@
-<?php 
-if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
 
 if(!function_exists('phpshark_writeLog')):
 function phpshark_writeLog($log_type, $error_desc, $filename = null)
@@ -28,8 +28,8 @@ function phpshark_locFilelog($log_type, $filename = null)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "file-error-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "file-error-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			if ($filename == null) {
@@ -46,8 +46,8 @@ function phpshark_locFilelog($log_type, $filename = null)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "file-error-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "file-error-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			if ($filename == null) {
@@ -63,8 +63,8 @@ function phpshark_locFilelog($log_type, $filename = null)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "file-error-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "file-error-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			if ($filename == null) {
@@ -80,8 +80,8 @@ function phpshark_locFilelog($log_type, $filename = null)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "file-error-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "file-error-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			if ($filename == null) {
@@ -104,8 +104,8 @@ function phpshark_locFileImport($folder, $file)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "application-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "application-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			return $path . $file . '.xml';
@@ -116,8 +116,8 @@ function phpshark_locFileImport($folder, $file)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "application-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "application-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			return $path . $file . '.csv';
@@ -128,8 +128,8 @@ function phpshark_locFileImport($folder, $file)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "application-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "application-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			return $path . $file . '.txt';
@@ -140,8 +140,8 @@ function phpshark_locFileImport($folder, $file)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "application-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "application-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			return $path . $file . '.txt';
@@ -152,8 +152,8 @@ function phpshark_locFileImport($folder, $file)
 			if (!file_exists($path)) {
 				if (!mkdir($path, 0777, true)) {
 					//die('Failed to create folders...');
-					write_log('application', 'ERROR: Failed to create folders...');
-					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . 'check "application-log" with your log Folder!');
+					write_log('application', __('ERROR: Failed to create folders...',TEXT_DOMAIN));
+					die(date("Y-m-d", $t) . ":" . date("h:i:sa") . __('check "application-log" with your log Folder!',TEXT_DOMAIN));
 				}
 			}
 			return $path . $file . '.txt';
@@ -161,4 +161,3 @@ function phpshark_locFileImport($folder, $file)
 	}
 }
 endif;
-

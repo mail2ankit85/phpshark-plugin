@@ -1,9 +1,9 @@
-<?php 
+<?php
 /**
  * @package  PHPShark-Plugin
  */
 namespace Core\Lib\Files {
-	if (!defined('BASEPATH')) exit('No direct script access allowed');
+	if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
 
 	class Upload extends Files
 	{
@@ -20,7 +20,7 @@ namespace Core\Lib\Files {
 			$upload = "1";
 			$msg_log = array();
 			$success_log = array();
-			
+
 			//var_dump(sys_get_temp_dir());
 			$keywords = array('attribute-name', 'location', 'size-limit', 'allowed-type');
 			if (!array_key_exists('attribute-name', $opt) == true && $opt[0] = 'attribute-name') {
@@ -30,7 +30,7 @@ namespace Core\Lib\Files {
 			if (!array_key_exists('location', $opt) == true && $opt[1] = 'location') {
 				echo 'Mandatory attributes not provided to the function';
 				exit;
-			} 
+			}
 
 			// Set Upload Location/ $taget Directory
 			if (!isset($opt['location']) && $opt['location'] == '') {
@@ -45,7 +45,7 @@ namespace Core\Lib\Files {
 				$fileType = $this->fileType($opt['location'], $opt['attribute-name']);
 				$filename = $this->fileName($opt['attribute-name']);
 
-				// Set Size Limit 
+				// Set Size Limit
 				if (isset($opt['size-limit'])) {
 					if ($this->fileSize($opt['attribute-name']) > $opt['size-limit']) {
 						$upload = "0";

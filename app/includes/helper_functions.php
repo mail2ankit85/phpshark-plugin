@@ -1,5 +1,7 @@
 <?php
 //MAKE TEXT DOMAIN
-function phpshark_read_config($key, $value){
-	return \Core\Lib\Config::get("{$key}/{$value}");
+if(!function_exists(phpshark_read_config)){
+	function phpshark_read_config($key, $value){
+		return \Core\Lib\Config::get("{$key}/{$value}");
+	}
 }

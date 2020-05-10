@@ -1,6 +1,6 @@
 <?php
 namespace Core\Lib {
-	if (!defined('BASEPATH')) exit('No direct script access allowed');
+	if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
 
 	class SMS
 	{
@@ -12,8 +12,8 @@ namespace Core\Lib {
 		public function checkCurl()
 		{
 			if (!function_exists('curl_version')) {
-				die("PHP must have cURL support for this script.
-                Ask hosting for it as it should be a 100% available library.");
+				die(__("PHP must have cURL support for this script.
+                Ask hosting for it as it should be a 100% available library.",TEXT_DOMAIN));
 			}
 		}
 

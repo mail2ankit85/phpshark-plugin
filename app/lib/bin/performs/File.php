@@ -4,7 +4,7 @@
  */
 namespace Core\Lib\Perform{
 	if (!defined('BASEPATH')) exit('No direct script access allowed');
-	
+
 	class File{
 		public static function remote_file_size($url, $user = "", $pw = ""){
 			ob_start();
@@ -14,7 +14,7 @@ namespace Core\Lib\Perform{
 
 			if(!empty($user) && !empty($pw))
 			{
-				$headers = array('Authorization: Basic ' .  base64_encode("$user:$pw"));
+				$headers = array('Authorization: Basic' .  base64_encode("$user:$pw"));
 				curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			}
 
@@ -26,7 +26,7 @@ namespace Core\Lib\Perform{
 			$regex = '/Content-Length:\s([0-9].+?)\s/';
 			$count = preg_match($regex, $head, $matches);
 
-			return isset($matches[1]) ? $matches[1] : "unknown";
+			return isset($matches[1]) ? $matches[1] : 'unknown';
 		}
 	}
 }

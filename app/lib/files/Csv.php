@@ -1,9 +1,9 @@
-<?php 
+<?php
 /**
  * @package  PHPShark-Plugin
  */
 namespace Core\Lib\Files {
-	if (!defined('BASEPATH')) exit('No direct script access allowed');
+	if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
 
 	class CSV
 	{
@@ -46,7 +46,7 @@ namespace Core\Lib\Files {
 			return stream_get_contents('php://input');
 		}
 
-		public function generateCsv($data, $delimiter = ',', $enclosure = '"') 
+		public function generateCsv($data, $delimiter = ',', $enclosure = '"')
 		{
 			$handle = fopen('php://temp', 'r+');
 			foreach ($data as $line) {

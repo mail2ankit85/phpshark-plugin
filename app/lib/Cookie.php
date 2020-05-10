@@ -1,7 +1,7 @@
-<?php 
+<?php
 namespace Core\Lib;
-	if (!defined('BASEPATH')) exit('No direct script access allowed');
-	
+	if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
+
 class Cookie
 {
 	private $_time;
@@ -18,13 +18,13 @@ class Cookie
 		$time = '';
 
 		if (array_key_exists('name', $arr) == false) {
-			set_error("\COOKIE SYNTAX ERROR: NAME not set in the right position.
-			True position is 1. "
+			set_error(__("\COOKIE SYNTAX ERROR: NAME not set in the right position.
+			True position is 1. ",TEXT_DOMAIN)
 			. __CLASS__ . "/". __FUNCTION__ );
 		}
 		if (array_key_exists('value', $arr) == false) {
-			set_error("\COOKIE SYNTAX ERROR: VALUE not set in the right position.
-			True position is 2. "
+			set_error(__("\COOKIE SYNTAX ERROR: VALUE not set in the right position.
+			True position is 2. ",TEXT_DOMAIN)
 			. __CLASS__ . "/". __FUNCTION__ );
 		}
 		foreach ($arr as $key => $value) {
@@ -39,7 +39,7 @@ class Cookie
 					$time = $value;
 					break;
 				default :
-				set_error("\COOKIE SYNTAX ERROR: No such index as ".$key." Exists."
+				set_error(__("\COOKIE SYNTAX ERROR: No such index as ",TEXT_DOMAIN).$key.__(" Exists.",TEXT_DOMAIN)
 				. __CLASS__ . "/". __FUNCTION__ );
 			}
 		}
@@ -69,13 +69,13 @@ class Cookie
 		$time = '';
 
 		if (array_key_exists('name', $arr) == false) {
-			set_error("\COOKIE SYNTAX ERROR: NAME not set in the right position.
-			True position is 1. "
+			set_error(__("\COOKIE SYNTAX ERROR: NAME not set in the right position.
+			True position is 1. ",TEXT_DOMAIN)
 			. __CLASS__ . "/". __FUNCTION__ );
 		}
 		if (array_key_exists('value', $arr) == false) {
-			set_error("\COOKIE SYNTAX ERROR: VALUE not set in the right position.
-			True position is 2. "
+			set_error(__("\COOKIE SYNTAX ERROR: VALUE not set in the right position.
+			True position is 2. ",TEXT_DOMAIN)
 			. __CLASS__ . "/". __FUNCTION__ );
 		}
 		foreach ($arr as $key => $value) {
@@ -90,7 +90,7 @@ class Cookie
 					$time = $value;
 					break;
 				default :
-				set_error("\COOKIE SYNTAX ERROR: No such index as ".$key." Exists."
+				set_error(__("\COOKIE SYNTAX ERROR: No such index as ",TEXT_DOMAIN).$key.__(" Exists.",TEXT_DOMAIN)
 				. __CLASS__ . "/". __FUNCTION__ );
 			}
 		}

@@ -32,8 +32,8 @@ class PHPSharkCustomPostType{
     $$functionCallback = function() {
         // Set UI labels for Custom Post Type
         $labels = array(
-            'name'                => _x( $this->_name, 'Post Type General Name', $this->_theme_name ),
-            'singular_name'       => _x( $this->_name, 'Post Type Singular Name', $this->_theme_name ),
+            'name'                => _x( $this->_name, __('Post Type General Name'), $this->_theme_name ),
+            'singular_name'       => _x( $this->_name, __('Post Type Singular Name'), $this->_theme_name ),
             'menu_name'           => __( $this->_name, $this->_theme_name ),
             'parent_item_colon'   => __( "Parent $this->_name", $this->_theme_name ),
             'all_items'           => __( "All $this->_plural_name", $this->_theme_name ),

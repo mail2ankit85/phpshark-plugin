@@ -1,7 +1,7 @@
 <?php
 namespace Core\Lib{
-	if (!defined('BASEPATH')) exit('No direct script access allowed');
-	
+	if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
+
 	 class Json extends Files{
 		protected static $_messages = array(
 			JSON_ERROR_NONE => '0',
@@ -77,7 +77,7 @@ namespace Core\Lib{
 			$obj = json_decode($json);
 			return $obj;
 		}
-		
+
 		public function encode($value, $options = 0) {
 			header("Content-type: application/json; charset=utf-8");
 			$result = json_encode($value, $options);

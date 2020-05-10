@@ -1,5 +1,5 @@
 <?php
-if (!defined('BASEPATH')) exit('No direct script access allowed');
+if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
 
 use \Core\Lib\Files\Files as files;
 use \Core\Lib\Files\Image as imgs;
@@ -37,7 +37,7 @@ function phpshark_url($path = null){
 }
 endif;
 
-	  
+
 if(!function_exists('phpshark_domain')):
 function phpshark_domain()
 {
@@ -54,7 +54,7 @@ function phpshark_domain()
 endif;
 
 
-	  
+
 if(!function_exists('phpshark_dbase')):
 function phpshark_dbase()
 {
@@ -112,7 +112,7 @@ endif;
  * Suppose, you are browsing in your localhost
  * http://localhost/myproject/index.php?id=8
  */
- 
+
  if(!function_exists('phpshark_getBaseUrl')):
  function phpshark_getBaseUrl()
  {

@@ -1,5 +1,5 @@
 <?php
-if (!defined('BASEPATH')) exit('No direct script access allowed');
+if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
 
 function sytime($format = "h:i:sa")
 {

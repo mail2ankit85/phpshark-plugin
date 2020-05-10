@@ -25,6 +25,10 @@ in the project folder.
 		'display' => strtoupper(trim($app_error)),
 	),
 
+	'text-domain' => array(
+		'name' => $text_domain
+	),
+
 	//Database Configurations
 	'database_credits' => array(
 		'persistent' => trim($persistent),

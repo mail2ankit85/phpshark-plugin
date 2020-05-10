@@ -1,6 +1,6 @@
-<?php 
+<?php
 namespace Core\Lib {
-	if (!defined('BASEPATH')) exit('No direct script access allowed');
+	if (!defined('BASEPATH')) exit(__('No direct script access allowed',TEXT_DOMAIN));
 
 	class Token
 	{
@@ -20,7 +20,7 @@ namespace Core\Lib {
 			}
 			return false;
 		}
-		
+
 		public static function init(){
 			return new self;
 		}

@@ -4,7 +4,7 @@
  */
 namespace Core\Lib\Perform{
     if (!defined('BASEPATH')) exit('No direct script access allowed');
-    
+
     class Youtube{
         private static function lcl_str_between($string, $start, $end){
             $string = " ".$string;
@@ -25,9 +25,9 @@ namespace Core\Lib\Perform{
             $hq_flv_link = "http://www.youtube.com/get_video?video_id=$v_id&t=$t_id&fmt=6";
             $mp4_link = "http://www.youtube.com/get_video?video_id=$v_id&t=$t_id&fmt=18";
             $threegp_link = "http://www.youtube.com/get_video?video_id=$v_id&t=$t_id&fmt=17";
-            echo "\t\tDownload (right-click > save as)&#58;\n\t\t";
+            echo "\t\tDownload (". __('right-click',TEXT_DOMAIN) .'>'. __('save as',TEXT_DOMAIN).")&#58;\n\t\t";
             echo "<a href=\"$flv_link\"<FLV</a<\n\t\t";
-            echo "<a href=\"$hq_flv_link\"<HQ FLV (if available)</a<\n\t\t";
+            echo "<a href=\"$hq_flv_link\"<HQ FLV (".__('if available',TEXT_DOMAIN).")</a<\n\t\t";
             echo "<a href=\"$mp4_link\"<MP4</a<\n\t\t";
             echo "<a href=\"$threegp_link\"<3GP</a<<br<<br<\n";
         }

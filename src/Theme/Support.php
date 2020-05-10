@@ -9,7 +9,7 @@ namespace Src\Theme;
 
 class Support{
 	public function register(){
-
+		$this->post_formats();
 		$this->post_images();
 	}
 
@@ -21,5 +21,20 @@ class Support{
 		add_image_size( 'screen-1 size', 574, 443 );
 		add_image_size( 'screen-2 size', 274, 442 );
 		add_image_size( 'screen-3 size', 374, 215 );
+	}
+
+	//Post Images
+	public function post_formats(){
+			$formats = array( 'aside',
+						 						'gallery',
+												'link',
+												'image',
+												'quote',
+												'status',
+												'video',
+												'audio',
+												'chat');
+
+			add_theme_support( 'post-formats', $formats);
 	}
 }

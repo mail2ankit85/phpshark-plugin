@@ -47,3 +47,28 @@ $wp_path = PLUGIN_DIR . 'project' . DS . 'wp_functions' .DS. 'classes';
 foreach (glob("{$wp_path}/*.php") as $wp_filename){
     require_once $wp_filename;
 }
+
+
+/***************************************************************/
+/* include Wordpress admin
+/***************************************************************/
+$wp_path = PLUGIN_DIR . 'project' . DS . 'admin';
+foreach (glob("{$wp_path}/*.php") as $wp_filename){
+    require_once $wp_filename;
+}
+
+/***************************************************************/
+/* include Wordpress admin includes
+/***************************************************************/
+$wp_path = PLUGIN_DIR . 'project' . DS . 'admin'. DS.'inc';
+foreach (glob("{$wp_path}/*.php") as $wp_filename){
+    require_once $wp_filename;
+}
+
+/***************************************************************/
+/* include Wordpress admin classes
+/***************************************************************/
+$wp_path = PLUGIN_DIR . 'project' . DS . 'admin'. DS.'classes';
+foreach (glob("{$wp_path}/*.php") as $wp_filename){
+    require_once $wp_filename;
+}
